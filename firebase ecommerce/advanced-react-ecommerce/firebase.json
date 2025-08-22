@@ -1,0 +1,133 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "advanced-react-ecommerce": {
+    ".github": {
+      "copilot-instructions.md": "Your coding guidelines"
+    },
+    "public": {
+      "index.html": ""
+    },
+    "src": {
+      "components": {
+        "Header.jsx": "",
+        "Header.module.css": "",
+        "ProductCard.jsx": "",
+        "ProductCard.module.css": ""
+      },
+      "hooks": {
+        "useProducts.js": "",
+        "useCart.js": ""
+      },
+      "store": {
+        "store.js": "",
+        "cartSlice.js": ""
+      },
+      "services": {
+        "fakeStoreApi.js": "",
+        "firestoreService.js": ""
+      },
+      "utils": {
+        "constants.js": ""
+      },
+      "App.jsx": "",
+      "App.css": "",
+      "main.jsx": ""
+    },
+    ".gitignore": "",
+    "firebase.json": "",
+    "package.json": "",
+    "vite.config.js": "",
+    "README.md": ""
+  },
+  "dependencies": {
+    "node_modules/": {},
+    "npm-debug.log*": {},
+    "yarn-debug.log*": {},
+    "dist/": {},
+    "build/": {},
+    ".env": {},
+    ".env.local": {},
+    ".env.development.local": {},
+    ".firebase/": {},
+    "firebase-debug.log": {},
+    ".vscode/": {},
+    ".DS_Store": {},
+    "Thumbs.db": {}
+  },
+  "name": "advanced-react-ecommerce",
+  "version": "1.0.0",
+  "description": "An advanced React e-commerce application demonstrating modern React patterns, state management, and Firebase integration.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "react",
+    "ecommerce",
+    "firebase",
+    "redux",
+    "react-query",
+    "vite"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.7.2",
+    "firebase": "^9.6.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-query": "^3.34.0",
+    "react-router-dom": "^6.2.1",
+    "vite": "^2.6.4"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.4.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "env": {
+    "VITE_FIREBASE_API_KEY": "your_api_key_here",
+    "VITE_FIREBASE_AUTH_DOMAIN": "your_project.firebaseapp.com",
+    "VITE_FIREBASE_PROJECT_ID": "your_project_id",
+    "VITE_FIREBASE_STORAGE_BUCKET": "your_project.appspot.com",
+    "VITE_FIREBASE_MESSAGING_SENDER_ID": "your_sender_id",
+    "VITE_FIREBASE_APP_ID": "your_app_id"
+  }
+}
